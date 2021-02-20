@@ -1,0 +1,1 @@
+<view><m-back-bar vue-id="058c2352-1" id="webViewBackBar" bind:__l="__l" vue-slots="{{['barTitle']}}"><view slot="barTitle">{{barTitle}}</view></m-back-bar><web-view style="{{'margin-top:'+(marginTop+'px')+';'}}" src="{{webViewURL}}" webview-styles="{{webviewStyles}}"></web-view></view>

@@ -1,0 +1,107 @@
+@charset "utf-8";
+.icon-stack{//齿轮
+	$icon-stack-width: pxToREM(50);//齿轮宽
+	$icon-stack-Height: pxToREM(50);//齿轮高
+	position: relative;
+	width: $icon-stack-width;
+	height: $icon-stack-Height;
+	line-height: $icon-stack-Height;
+	.m-fonticon{
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		display: flex;
+	}
+}
+.login{//登录
+	display: flex;
+	flex-direction: column;
+	&-item{
+		margin-top:pxToREM(28);
+		input{
+			font-size:18px !important;
+		}
+		.formElemets .text {padding: 0 !important;}
+	}
+	&-content{
+		$login-content-height: pxToREM(378);//登录框高度
+		$login-content-text: pxToREM(28);//登录框lable字体大小
+		$login-content-value: pxToREM(36);//登录框输入字体大小
+		height: $login-content-height;
+		text-align: left;
+		padding: 0  pxToREM(80);
+		background:#fff;
+		& .mInput.input-label .text{
+			font-size:$login-content-text;
+			color:rgba(155,155,155,1);
+		}
+		& .input-label .uni-input-input{
+			font-size:$login-content-value !important;
+		}
+	}
+	&-header,&-foot{
+		flex-grow: 1;
+		background:#fff;
+	}
+	&-foot{
+		padding: pxToREM(98) pxToREM(60);
+	}
+	&-header{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		.loginheader-item{
+			display: flex;
+			align-items: center;
+			font-size: pxToREM(66);
+		}
+		.logoT{
+			$logoT-height: pxToREM(50);//T图片宽
+			$logoT-width: pxToREM(32);//T图片高
+			max-width: 100%;
+			height: $logoT-height;
+			width:$logoT-width;
+			// animation: swing 2.5s .15s linear infinite;
+		}
+		.loginGear{
+			$logoGear-height: pxToREM(50);//齿轮图片宽
+			$logoGear-width: pxToREM(50);//齿轮图片高
+			height: $logoGear-height;
+			width:$logoGear-width;
+			margin: 0 3px;
+			animation:turn 4s linear infinite;
+		}
+		@keyframes turn{
+			0%{-webkit-transform:rotate(0deg);}
+			25%{-webkit-transform:rotate(90deg);}
+			50%{-webkit-transform:rotate(180deg);}
+			75%{-webkit-transform:rotate(270deg);}
+			100%{-webkit-transform:rotate(360deg);}
+		}
+		@keyframes swing{
+			10% {transform:rotate(90deg);}
+			20% {transform:rotate(-10deg);}
+			30% {transform:rotate(5deg);}
+			40% {transform:rotate(-5deg);}
+			50% {transform:rotate(0deg); }
+			100% {transform:rotate(0deg);}
+		}
+	}
+	&header-text{
+		font-family: PingFangSC;
+		font-size:pxToREM(40);
+		font-weight:400;
+		color:rgba(68,68,68,1);
+	}
+	&-content-footer{
+		color:rgba(155,155,155,1);
+	}
+	&-content-footer .remeber{
+		color:rgba(68,68,68,1);
+	}
+	.password-forget{float: left;}
+	&-remb{
+		float: right;
+	}
+}

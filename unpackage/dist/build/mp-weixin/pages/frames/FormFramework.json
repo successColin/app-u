@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "form-com": "/components/makeup/form/FormCom",
+    "top-btns-coms": "/pageComs/topBtnsComs",
+    "bottom-btns-coms": "/pageComs/bottomBtnsComs",
+    "dropdown-menu": "/pageComs/dropdownMenu"
+  }
+}

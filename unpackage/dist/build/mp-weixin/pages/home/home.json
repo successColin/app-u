@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "m-tabbar": "/components/bar/m-tabbar",
+    "workbench": "/pages/basic/workbench",
+    "myself": "/pages/basic/myself",
+    "filelist": "/pages/basic/fileList",
+    "calendar": "/pages/basic/calendar",
+    "news": "/pages/basic/news"
+  }
+}

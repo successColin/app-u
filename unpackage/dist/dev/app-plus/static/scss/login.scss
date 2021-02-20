@@ -1,0 +1,256 @@
+@charset "utf-8";
+.icon-stack{//齿轮
+	$icon-stack-width: pxToREM(50);//齿轮宽
+	$icon-stack-Height: pxToREM(50);//齿轮高
+	position: relative;
+	width: $icon-stack-width;
+	height: $icon-stack-Height;
+	line-height: $icon-stack-Height;
+	.m-fonticon{
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		display: flex;
+	}
+}
+.login{//登录
+	display: flex;
+	flex-direction: column;
+	background: $main-color;
+	&-item{
+		margin-top:pxToREM(28);
+		input{
+			font-size:18px !important;
+		}
+		.formElemets .text {padding: 0 !important;}
+	}
+	&-content{
+		$login-content-height: pxToREM(378);//登录框高度
+		$login-content-text: pxToREM(28);//登录框lable字体大小
+		$login-content-value: pxToREM(36);//登录框输入字体大小
+		// height: $login-content-height;
+		text-align: left;
+		padding: 0  pxToREM(70);
+		flex-grow: 3;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		border-radius: pxToREM(80) pxToREM(80) 0px 0px;
+		background: #F5F6FA;
+		min-height: $login-content-height;
+		&-title{
+			font-size: pxToREM(42);
+			color: #333333;
+			font-weight: 500;
+			flex: 1;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			span{
+				color: $main-color;
+				padding-right: pxToREM(8);
+			}
+		}
+		.login-items{
+			flex: 3;
+			align-items: flex-start;
+		}
+		.login-btn{
+			flex: 1;
+			.btn{
+				height: $input-height;
+				line-height: $input-height;
+				border-radius: pxToREM(20);
+			}
+			.lightBtn{
+				.btn{
+				opacity: .8;
+				}
+			}
+		}
+		& .mInput.input-label .text{
+			font-size:$login-content-text;
+			color:rgba(155,155,155,1);
+		}
+		& .input-label .uni-input-input{
+			font-size:$login-content-value !important;
+		}
+		.uni-label-pointer{
+			line-height: pxToREM(50);
+		}
+		.inputFocus-red{
+			border: none;
+		}
+		.content{
+			background: #fff;
+			padding-right: pxToREM(36);
+			border-radius: pxToREM(20);
+			border: 1px solid #EBEBEB;
+			color: #333333;
+			.label-icon{
+				color: #C62127;
+				width: pxToREM(40);
+				text-align: center;
+				margin: 0 pxToREM(20);
+				padding-right: pxToREM(20);
+				position: relative;
+				&::before{
+					content: '';
+					width: 1px;
+					height: pxToREM(28);
+					background: #EBEBEB;
+					position: absolute;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+				}
+			}
+		}
+	}
+	&-header{
+		background: none;
+		position: relative;
+		.loginheader-text{
+			font-size: pxToREM(32);
+		}
+		&::before{
+			content: '';
+			width: pxToREM(600);
+			height: pxToREM(600);
+			display: inline-block;
+			border-radius: 50%;
+			// border: pxToREM(50) solid #fff;
+			// border: pxToREM(50) solid;
+			bottom: - pxToREM(30);
+			left: - pxToREM(220);
+			position: absolute;
+			opacity: .1;
+			z-index: -1;
+			background-image: linear-gradient(to bottom, rgba(255,255,255,.0) 0%, rgba(255,255,255,.0) 50%, rgba(255,255,255,1) 100%);
+		}
+		.cover{
+			width: pxToREM(500);
+			height: pxToREM(500);
+			display: inline-block;
+			border-radius: 50%;
+			// border: pxToREM(50) solid #fff;
+			// border: pxToREM(50) solid;
+			bottom: pxToREM(20);
+			left: - pxToREM(170);
+			position: absolute;
+			opacity: 1;
+			z-index: -1;
+		}
+	}
+	&-header,&-foot{
+		flex-grow: 1;
+	}
+	&-foot{
+		background:#fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #F5F6FA;
+		font-size: pxToREM(24);
+		span{
+			color: $main-color;
+			padding: 0 pxToREM(6);
+		}
+	}
+	&-header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding:  0 pxToREM(80);
+		color: #fff;
+		position: relative;
+		min-height: pxToREM(140);
+		.loginheader-item{
+			display: flex;
+			align-items: center;
+			font-size: pxToREM(66);
+			.loginLogo{
+				height: pxToREM(48);
+				width: auto;
+				margin-bottom: pxToREM(20);
+			}
+		}
+		.logoT{
+			$logoT-height: pxToREM(50);//T图片宽
+			$logoT-width: pxToREM(32);//T图片高
+			max-width: 100%;
+			height: $logoT-height;
+			width:$logoT-width;
+			// animation: swing 2.5s .15s linear infinite;
+		}
+		.loginGear1{
+			position: absolute;
+			bottom: - pxToREM(88);
+			right: - pxToREM(31);
+			opacity: .3;
+			animation:turn 10s linear infinite;
+		}
+		.loginGear2{
+			position: absolute;
+			bottom: pxToREM(6);
+			right: pxToREM(160);
+			opacity: .16;
+			animation:turn2 10s linear infinite;
+		}
+		.loginGear{
+			$logoGear-height: pxToREM(50);//齿轮图片宽
+			$logoGear-width: pxToREM(50);//齿轮图片高
+			height: $logoGear-height;
+			width:$logoGear-width;
+			margin: 0 3px;
+			animation:turn 10s linear infinite;
+		}
+		@keyframes turn{
+			0%{-webkit-transform:rotate(0deg);}
+			100%{-webkit-transform:rotate(360deg);}
+		}
+		@keyframes turn2{
+			0%{-webkit-transform:rotate(360deg);}
+			100%{-webkit-transform:rotate(0deg);}
+		}
+		@keyframes swing{
+			10% {transform:rotate(90deg);}
+			20% {transform:rotate(-10deg);}
+			30% {transform:rotate(5deg);}
+			40% {transform:rotate(-5deg);}
+			50% {transform:rotate(0deg); }
+			100% {transform:rotate(0deg);}
+		}
+	}
+	&header-text{
+		font-family: PingFangSC;
+		font-size:pxToREM(36);
+		font-weight:400;
+		color:#fff;
+	}
+	&-content-footer{
+		color:rgba(155,155,155,1);
+		.login-remb{
+			.fontTextBtn{
+				align-items: flex-end;
+				height: pxToREM(40);
+				.user-remember{
+					line-height: pxToREM(40);
+					font-size: pxToREM(28);
+					padding-left: pxToREM(6);
+					span{
+						line-height: pxToREM(40);
+					}
+				}
+			}
+		}
+	}
+	&-content-footer .remeber{
+		color:rgba(68,68,68,1);
+	}
+	.password-forget{float: left;}
+	&-remb{
+		float: right;
+	}
+}

@@ -1,0 +1,1 @@
+<view class="formTemplate"><m-back-bar vue-id="795818f5-1" bind:__l="__l" vue-slots="{{['barTitle']}}"><view slot="barTitle">{{bundleName}}</view></m-back-bar><m-button vue-id="795818f5-2" btnTilte="{{$root.m0}}" btnClass="mainColor" data-event-opts="{{[['^elementClick',[['setPageInfo']]]]}}" bind:elementClick="__e" bind:__l="__l"></m-button></view>

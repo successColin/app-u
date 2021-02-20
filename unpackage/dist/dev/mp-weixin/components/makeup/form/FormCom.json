@@ -1,0 +1,21 @@
+{
+  "component": true,
+  "usingComponents": {
+    "m-image": "/components/element/m-image",
+    "m-label": "/components/element/m-label",
+    "m-search-select": "/components/element/m-searchSelect",
+    "m-input-lable": "/components/element/m-inputLable1",
+    "m-select": "/components/element/m-select",
+    "mpvue-picker": "/components/mpvue-picker/mpvuePicker",
+    "m-date-picker": "/components/element/m-datePicker",
+    "m-date-picker-range": "/components/element/m-datePickerRange",
+    "m-advanced-filter": "/components/element/m-advancedFilter",
+    "m-textarea": "/components/element/m-textarea",
+    "m-upload": "/components/mniUpload/MniUpload",
+    "m-rate": "/components/element/m-rate",
+    "mni-rich": "/components/jyf-parser/jyf-parser",
+    "m-radio": "/components/element/m-radio",
+    "m-map": "/components/element/m-map",
+    "m-multiple-search-select": "/components/element/multiple/m-multiple-searchSelect"
+  }
+}

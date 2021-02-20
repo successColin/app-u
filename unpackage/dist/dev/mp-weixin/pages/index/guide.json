@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "show-power": "/pages/index/showPower"
+  }
+}

@@ -1,0 +1,7 @@
+
+.ellipsis.data-v-217e1788{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+

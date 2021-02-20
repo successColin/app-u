@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "m-label": "/components/element/m-label",
+    "m-rate": "/components/element/m-rate",
+    "mni-pager": "/components/makeup/list/mni-pager"
+  }
+}

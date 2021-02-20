@@ -1,0 +1,16 @@
+.superscript{
+	height: pxToREM(26);
+	min-width: pxToREM(26);
+	background: #F02F36;
+	border-radius: pxToREM(14);
+	border-bottom-left-radius: 0;
+	color: #fff;
+	position: absolute;
+	top: pxToREM(-10);
+	left: 50%;
+	margin-left: 1rem;
+	line-height: pxToREM(26);
+	padding: 0 pxToREM(4);
+	font-size: pxToREM(14);
+	text-align: center;
+}

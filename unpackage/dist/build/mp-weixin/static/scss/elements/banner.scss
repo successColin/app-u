@@ -1,0 +1,30 @@
+.banner{
+	width: 100%;
+	height: pxToREM(254);
+	padding: pxToREM(27) pxToREM(30);
+	.banner-wrap{
+		width: 100%;
+		height: 100%;
+			position: relative;
+		.swiper{
+			width: 100%;
+			height: 100%;
+			.swiper-image{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.index-wrap{
+			position: absolute;
+			right: pxToREM(20);
+			bottom: pxToREM(15);
+			height: pxToREM(28);
+			line-height: pxToREM(28);
+			border-radius: pxToREM(14);
+			background: rgba(0,0,0,0.22);
+			color: #fff;
+			font-size: pxToREM(24);
+			padding: 0 pxToREM(10);
+		}
+	}
+}

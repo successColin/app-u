@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-calendar": "/components/plugin/calendar/uni-calendar",
+    "list-com": "/components/makeup/list/ListCom",
+    "m-plain-list": "/components/makeup/m-plainList"
+  }
+}

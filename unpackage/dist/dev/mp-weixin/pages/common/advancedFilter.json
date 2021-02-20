@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "form-com": "/components/makeup/form/FormCom"
+  }
+}

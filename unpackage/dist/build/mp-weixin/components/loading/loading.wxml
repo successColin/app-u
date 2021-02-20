@@ -1,0 +1,1 @@
+<block wx:if="{{isLoading||forceShow}}"><view class="backmask data-v-7d5ed9ae"><view class="loading data-v-7d5ed9ae"><view class="squareXS data-v-7d5ed9ae"></view><view class="squareXL data-v-7d5ed9ae"></view></view></view></block>

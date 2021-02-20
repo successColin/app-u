@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "echarts-template": "/pages/common/echartsTemplate"
+  }
+}

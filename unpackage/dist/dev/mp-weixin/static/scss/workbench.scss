@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* 控制台 */
+.workbench {
+	$main-bundle-height: pxToREM(180) !default;//主体高度
+	$main-bundle-top: pxToREM(100) !default;//主体高度
+	$main-bundle-margin: pxToREM(72) !default;//主体高度
+	$main-bundle-text: pxToREM(28) !default;//bundle字体大小
+	$bundle-text: pxToREM(26) !default;
+	padding-bottom: $has-big-btn;
+	width: 100%;
+	height: 100%;
+	background:#fff;
+	font-family:PingFangSC-Regular,PingFang SC;
+	&-header{
+		position: relative;
+		width: 100%;
+		background-size: cover;
+		.header{
+			background-size:contain;
+			height: pxToREM($index-Header-Height);
+		}
+	}
+	&-bottom{//工作台底部提示语句
+		width: 100%;
+		height: $bottom-bar;
+	}
+	.topshow-status {  
+		width: 100%;  
+		background-color: transparent;
+		position: fixed;  
+		top: 0;  
+		z-index: 999;  
+	}  
+	.topshow-status.black {
+		background-color: #000000;
+	}  
+	.topBtn{
+		position: fixed;
+		padding: 0 pxToREM(30);
+		display: flex;
+		width: 100%;
+		height: pxToREM(88);
+		line-height:  pxToREM(88);
+		z-index: 999;
+		color: white;
+		background: rgba(198,33,39,1);
+		.leftBtn,.rightBtn{
+			flex: 1;
+		}
+		.rightBtn{text-align: right;}
+	}
+	.bundle-main{
+		position: absolute;
+		bottom: pxToREM(-48);
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 pxToREM(30);
+		height:$main-bundle-height;
+		background:rgba(255,255,255,1);
+		box-shadow:0px 0px 6px 0px rgba(155,155,155,0.3);
+		border-radius:pxToREM($main-radius);
+		&-item{
+			flex: 1;
+			position: relative;
+			text-align: center;
+			font-size:$main-bundle-text;
+			.new{
+				position: absolute;
+				top: pxToREM(-10);
+				left: 50%;
+				margin-left: 1rem;
+				color: #F02F36;
+				font-size: pxToREM(30);
+			}
+			.redBundle{
+				position: relative;
+			}
+			.cornerMarker{
+				position: absolute;
+				width: pxToREM(40);
+				height: pxToREM(40);
+				line-height: pxToREM(40);
+				border-radius: 50%;
+				background: #F02F36;
+				color: #fff;
+				top: 0;
+				left: 50%;
+				margin-left:  pxToREM(20);
+				font-size: pxToREM(20);
+			}
+			
+		}
+	}
+	.bundle-list{
+		margin: 0 pxToREM(20) 0 pxToREM(30);
+		.hasMainBundle{
+			width: 100%;
+			height: pxToREM(48);
+		}
+		.hasstatus{
+			width: 100%;
+		}
+		.bundle-group{
+			display: flex;
+			box-pack: center;
+			align-items: flex-start;
+			flex-wrap:wrap;
+		}
+		.bundle-item{
+			font-size:$bundle-text;
+			color:rgba(17,17,17,1);
+			font-weight:400;
+			&.bundle-group-one{
+				flex: 0 0 100%;
+				padding: pxToREM(10) pxToREM(10) 0 0;
+				.bundle-item-content{
+					width: 100%;
+					height: pxToREM(139);
+					box-shadow:0 0 pxToREM(10) 0 rgba(0,0,0,0.1);
+					border-radius:pxToREM(6);
+				}
+			}
+			&.bundle-group-two{
+				flex: 0 0 50%;
+				text-align: left;
+				.bundle-item-right{
+					margin-left: pxToREM(20);
+				}
+				.bundle-item-content{
+					display: flex;
+					padding: pxToREM(20) pxToREM(40);
+					margin: pxToREM(10) pxToREM(10) 0 0;
+					line-height:pxToREM(34);
+					border-radius:pxToREM(6);
+				}
+				.bundle-item-subtext{
+					font-size:pxToREM(22);
+					font-weight:400;
+					color:rgba(136,136,136,1);
+					line-height:pxToREM(30);
+				}
+			}
+			
+			&.bundle-group-three{
+				flex: 0 0 33%;
+				text-align: left;
+				font-size:pxToREM(24);
+				.bundle-item-content{
+					padding: pxToREM(20) pxToREM(30);
+					margin: pxToREM(9) pxToREM(9) 0 0;
+					border-radius:pxToREM(6);
+				}
+				.iconbtn{font-size:pxToREM(18); margin-left: pxToREM(8);}
+			}
+			
+			&.bundle-group-four{
+				flex: 0 0 25%;
+				position: relative;
+				text-align: center;
+				margin: pxToREM(24) 0;
+				.new{
+					position: absolute;
+					top: pxToREM(-15);
+					left: 50%;
+					margin-left: 1rem;
+					color: #F02F36;
+					font-size: pxToREM(30);
+				}
+				.cornerMarker{
+					position: absolute;
+					width: pxToREM(30);
+					height: pxToREM(30);
+					line-height: pxToREM(30);
+					border-radius: 50%;
+					background: #F02F36;
+					color: #fff;
+					top: 0;
+					left: 50%;
+					margin-left:  pxToREM(15);
+					font-size: pxToREM(20);
+				}
+			}
+		}
+	}
+}
+.mainColor-blue{
+	.topBtn{
+		background: rgba(48,162,255,1);
+	}
+}

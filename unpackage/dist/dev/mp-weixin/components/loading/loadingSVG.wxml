@@ -1,0 +1,1 @@
+<view class="animated fadeInDown loadingSVG data-v-50980936"><image style="width:25px;height:25px;" src="/static/images/svg/tail-spin.svg" mode="aspectFill" class="data-v-50980936"></image>{{loadingTitle||$root.m0}}</view>

@@ -1,0 +1,96 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/guide",
+    "pages/login/login",
+    "pages/login/register",
+    "pages/login/selectServer"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/home",
+      "pages": [
+        "home"
+      ]
+    },
+    {
+      "root": "pages/mine",
+      "pages": [
+        "userQualification",
+        "userInfo",
+        "changePassword",
+        "feedback",
+        "qrcode",
+        "versionInfo",
+        "language",
+        "thirdPartyLinks"
+      ]
+    },
+    {
+      "root": "pages/frames",
+      "pages": [
+        "UBPFramework",
+        "FormFramework",
+        "echartFramework",
+        "ListFramework",
+        "ScanFramework"
+      ]
+    },
+    {
+      "root": "pages/templates",
+      "pages": [
+        "formTemplate",
+        "listTemplate",
+        "BRATemplate",
+        "DSTemplate",
+        "relationFileTab",
+        "formListTemplate",
+        "webViewTemplate"
+      ]
+    },
+    {
+      "root": "pages/common",
+      "pages": [
+        "searchTemplate",
+        "panelConfigTemplate",
+        "panelTemplate",
+        "advancedFilter",
+        "preview"
+      ]
+    },
+    {
+      "root": "pages/news",
+      "pages": [
+        "newsDetail"
+      ]
+    },
+    {
+      "root": "pages/map",
+      "pages": [
+        "map"
+      ]
+    }
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#FAFAFA",
+    "scrollIndicator": "none",
+    "softinputNavBar": "none"
+  },
+  "networkTimeout": {
+    "uploadFile": 60000000,
+    "request": 60000
+  },
+  "debug": true,
+  "usingComponents": {
+    "m-tree-item": "/components/makeup/tree/m-treeItem",
+    "m-font-icon": "/components/m-icon/m-fonticon",
+    "m-normal-icon": "/components/m-icon/m-normalIcon",
+    "m-button": "/components/element/m-button",
+    "m-back-bar": "/components/bar/m-backbar",
+    "m-loading": "/components/loading/loading",
+    "m-loding-svg": "/components/loading/loadingSVG",
+    "m-pop": "/components/m-pop/mPop"
+  }
+}

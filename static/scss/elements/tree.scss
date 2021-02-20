@@ -1,0 +1,61 @@
+.mTree{
+	line-height: pxToREM(70);
+	.tree-item-Child{
+		padding-left: pxToREM(30);
+	}
+	.tree-item-text{
+		position: relative;
+		font-size: pxToREM(24);
+		white-space: nowrap;
+		font-family:PingFangSC-Regular,PingFang SC;
+		font-weight:400;
+		color: #111;
+		.tree-item-icon{
+			display: inline-block;
+			padding-right: 3px;
+			&.icontransform{
+				transform : rotate(90deg);
+			}
+		}
+	}
+	
+	.tree-item-check {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: pxToREM(70);
+		height: pxToREM(80);
+		line-height: pxToREM(80);
+		text-align: right;
+		color: #D9D9D9;
+		&.checked{
+			color: $main-color;
+		}
+	}
+	.tree-item-check-yes,
+	.tree-item-check-no {
+		width: pxToREM(46);
+		height: pxToREM(46);
+		border-radius: 20%;
+		border: solid 1px #D9D9D9;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+	}
+	.tree-item-check-yes {
+		border-color: $main-color;
+	}
+	.tree-item-check-yes-b {
+		width: pxToREM(24);
+		height: pxToREM(24);
+		border-radius: 20%;
+		background-color: $main-color;
+	}
+	.tree-item-check .radio {
+		border-radius: 50%;
+	}
+	.tree-item-check .radio .tree-item-check-yes-b {
+		border-radius: 50%;
+	}
+}

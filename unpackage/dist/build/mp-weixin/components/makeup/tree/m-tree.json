@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "m-tree-item": "/components/makeup/tree/m-treeItem"
+  }
+}

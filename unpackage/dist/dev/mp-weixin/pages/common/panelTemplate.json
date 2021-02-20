@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "m-tree": "/components/makeup/tree/m-tree",
+    "m-plain-list": "/components/makeup/m-plainList"
+  }
+}

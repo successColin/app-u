@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "form-com": "/components/makeup/form/FormCom",
+    "top-btns-coms": "/pageComs/topBtnsComs",
+    "bottom-btns-coms": "/pageComs/bottomBtnsComs",
+    "dropdown-menu": "/pageComs/dropdownMenu",
+    "list-com": "/components/makeup/list/ListCom",
+    "m-input-search": "/components/element/m-inputSearch",
+    "progress-bar": "/components/progress-bar/progressBar"
+  }
+}

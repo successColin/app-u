@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "m-group-area": "/components/element/m-groupArea",
+    "min-badge": "/components/min-badge/min-badge",
+    "m-superscript": "/components/element/m-superscript",
+    "mni-banner": "/components/mniBanner/MniBanner"
+  }
+}

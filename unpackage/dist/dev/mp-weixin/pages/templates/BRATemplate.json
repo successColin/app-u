@@ -1,0 +1,11 @@
+{
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 20,
+  "usingComponents": {
+    "top-btns-coms": "/pageComs/topBtnsComs",
+    "bottom-btns-coms": "/pageComs/bottomBtnsComs",
+    "m-input-search": "/components/element/m-inputSearch",
+    "list-com": "/components/makeup/list/ListCom",
+    "dropdown-menu": "/pageComs/dropdownMenu"
+  }
+}

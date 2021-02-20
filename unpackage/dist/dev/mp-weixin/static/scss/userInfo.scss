@@ -1,0 +1,79 @@
+.userInfo{
+	width: 100%;
+	background: #fff;
+	position: relative;
+	padding-bottom: $button-Height;
+	.uni-list{
+		padding-right: pxToREM(30);
+	}
+	.user-info-item{
+		display: flex;
+		padding: pxToREM(20) pxToREM(30);
+		border-bottom: pxToREM(1) solid #E6E6E6;
+		height: pxToREM(98);
+		line-height: pxToREM(58);
+		font-size: pxToREM(30);
+		color: #444444;
+	}
+	.user-info-item:first-child{
+		height: pxToREM(140);
+		line-height: pxToREM(110);
+		padding: pxToREM(15) pxToREM(30);
+		
+	}
+	.user-info-item view{
+		flex-grow:1;
+	}
+	
+	.user-info-item view.workbench-headerimg{
+		flex-grow:0;
+		width: pxToREM(110);
+		height: pxToREM(110);
+		border-radius:pxToREM(11);
+		flex-grow:0;
+		.userinfo-upload{
+			width:100%;
+			height:100%;
+			.sunsin_picture_item{
+				width:100%;
+				height:100%;
+				margin: 0;
+				.sunsin_width{
+					width: 100% !important;
+					height: 100% !important;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+	.user-info-item input{
+		flex-grow:4;
+		height: pxToREM(58);
+		text-align: right;
+	}
+	
+	.top{
+		flex-direction: column;
+		justify-content: center;
+		view{
+			width: 100%;
+		}
+		input{
+			width: 100%;
+			text-align: left;
+		}
+	}
+	.save-item{
+		width: 100%;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		z-index: 999;
+		background-color: #c62127;
+	}
+	
+	view.upimg{
+		width: 100%;
+		height: 100%;
+	}
+}

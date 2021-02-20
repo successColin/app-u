@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "m-input-search": "/components/element/m-inputSearch"
+  }
+}

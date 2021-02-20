@@ -1,0 +1,1 @@
+<block wx:if="{{icon}}"><view class="m-fonticon _div"><view data-event-opts="{{[['tap',[['onClick']]]]}}" class="{{['icon iconfont _i',icon,iconClass]}}" style="{{'font-size:'+(iconSize)+';'+('color:'+(color)+';')}}" bindtap="__e"><slot></slot></view></view></block>

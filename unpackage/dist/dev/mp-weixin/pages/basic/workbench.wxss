@@ -1,0 +1,15 @@
+
+.gradient-text-one.data-v-975aa296{  
+	background-image:-webkit-linear-gradient(top,rgba(243,175,125,1) 0%,rgba(227,71,74,1) 100%);  
+	background-image:linear-gradient(180deg,rgba(243,175,125,1) 0%,rgba(227,71,74,1) 100%);
+	-webkit-background-clip:text; 
+	-webkit-text-fill-color:transparent;
+}
+.haveStatusBar.data-v-975aa296,.topshow-status.data-v-975aa296,.hasstatus.data-v-975aa296{
+	height: 25px;
+}
+.topBtn.data-v-975aa296{top: 25px;}
+.barmargin.data-v-975aa296{
+	margin-top:--status-bar-height
+}
+

@@ -1,0 +1,1 @@
+.app-statusBar{height:25px;width:100%;-webkit-flex-shrink:0;flex-shrink:0}.app-statusBar .top_view{height:25px;width:100%;position:fixed;top:0;z-index:999}.m-backbar{margin-bottom:25px}.hasStatusTop{margin-top:25px}

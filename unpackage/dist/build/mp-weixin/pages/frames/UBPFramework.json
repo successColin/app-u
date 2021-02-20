@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "top-btns-coms": "/pageComs/topBtnsComs",
+    "m-input-search": "/components/element/m-inputSearch",
+    "list-com": "/components/makeup/list/ListCom"
+  }
+}

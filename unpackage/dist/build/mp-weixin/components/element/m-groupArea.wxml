@@ -1,0 +1,1 @@
+<view hidden="{{!(static_visiabled)}}" class="{{[areaClass]}}"><block wx:if="{{name}}"><view class="groupArea-title"><view class="groupArea-title-content"><view class="tilte">{{name}}</view><slot name="titleslot"></slot></view></view></block><view class="groupArea-content"><slot></slot></view></view>

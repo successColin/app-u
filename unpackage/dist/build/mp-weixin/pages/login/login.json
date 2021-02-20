@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "m-input-lable": "/components/element/m-inputLable1"
+  }
+}
