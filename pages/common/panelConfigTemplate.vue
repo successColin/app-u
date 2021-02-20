@@ -71,7 +71,7 @@
 			...mapMutations("form", ["SET_ALLBTNS"]),
 			...mapMutations("home",["SET_NEW_BUNDLE"]),
 			...mapMutations("common",["SET_TEMPLATE_PARAMS","SET_TRIGGERMAP","SET_COMMONSLT","SET_TABS_ELEMENT"]),//设置面板变量
-			...mapMutations("advanceFilter", ["SET_ADVAN_FILTERS"]),
+			...mapMutations("advanceFilter", ["SET_ADVAN_FILTERS","SET_ADV_FORMDATAS"]),
 			...mapMutations("Toast", ["TOAST_REQUESTURLS"]),
 			handleClear(){
 				if(this.tabInfo.onKey) bus.$emit(this.tabInfo.onKey, {id:"",element:this.tabInfo.element})
@@ -162,6 +162,10 @@
 				this.SET_ADVAN_FILTERS({//设置高级筛选控件
 					tabId:mobileTabId,
 					params:mobileTabsBYRelation.elements
+				})
+				this.SET_ADV_FORMDATAS({	//清空高级筛选条件值
+					tabId:mobileTabId + '_filter',
+					value:{}
 				})
 				
 				this.SET_ALLBTNS({//设置按钮

@@ -79,7 +79,7 @@
 				"SET_TABS_ELEMENT",//设置面板变量
 				"SET_COM_PAGERELOAD"//记录从工作台点击进入后所以面板，用于判断是否需要重新加载
 			]),
-			...mapMutations("advanceFilter", ["SET_ADVAN_FILTERS"]),
+			...mapMutations("advanceFilter", ["SET_ADVAN_FILTERS","SET_ADV_FORMDATAS"]),
 			...mapMutations("Toast", ["TOAST_REQUESTURLS"]),
 			checkNode(param){//列表选中
 				const {checkIds, checkDatas}  = param
@@ -209,6 +209,10 @@
 				this.SET_ADVAN_FILTERS({//设置高级筛选控件
 					tabId:mobileTabId,
 					params:mobileTabsBYRelation.elements
+				})
+				this.SET_ADV_FORMDATAS({	//清空高级筛选条件值
+					tabId:mobileTabId + '_filter',
+					value:{}
 				})
 				
 				this.SET_TABS_ELEMENT({//设置面板控件

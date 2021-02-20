@@ -253,7 +253,7 @@
 				
 					this.formConfig.baseParams.currentElements = tabParams.currentElements
 					this.formConfig.loadsearchSelects = tabParams.loadsearchSelects
-					// this.formData = tabParams.formData
+					this.formData = tabParams.formData
 					//延迟显示表单
 					setTimeout(() => {
 						this.isShow = true

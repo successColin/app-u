@@ -11,6 +11,7 @@
 				:disabled="disabled ? true : false" 
 				:type="inputType_" 
 				:min = "3"
+				auto-blur=true
 				@input="changeLabelColor"
 				@focus="inputFocus" 
 				@blur="inputBlur"/>

@@ -59,7 +59,7 @@
 							</view>
 							<view class="info-item">
 								<text class="label-text">{{ $i18nMsg('inspection-measuredValue') }}：</text><!-- 中文：测量值-->
-								<input class="uni-input" type="text" :placeholder="$i18nMsg('inspection-enterMeasuredValue')" @input="handleInput" v-model="item.checkvalue"/><!-- 中文：请输入测量值-->
+								<input class="uni-input" auto-blur=true type="text" :placeholder="$i18nMsg('inspection-enterMeasuredValue')" @input="handleInput" v-model="item.checkvalue"/><!-- 中文：请输入测量值-->
 							</view>
 						</view>
 						<view class="basic-content-info" v-else-if="item.checktype > 3">
@@ -69,7 +69,7 @@
 							</view>
 							<view class="info-item">
 								<text class="label-text">{{ $i18nMsg('inspection-measuredValue') }}：</text><!-- 中文：测量值-->
-								<input class="uni-input" type="text" disabled="disabled" :placeholder="$i18nMsg('inspection-enterMeasuredValue')" v-model="item.checkvalue"/><!-- 中文：请输入测量值-->
+								<input class="uni-input" auto-blur=true type="text" disabled="disabled" :placeholder="$i18nMsg('inspection-enterMeasuredValue')" v-model="item.checkvalue"/><!-- 中文：请输入测量值-->
 								<m-font-icon :icon="ismeasure" :iconSize="60" :color="measureColor" @click="handleMeasure(item)"></m-font-icon>
 							</view>
 						</view>
@@ -84,12 +84,12 @@
 							</view>
 							<view class="info-item">
 								<text class="label-text">{{ $i18nMsg("page-quantity") }}：</text><!-- 中文： 数量-->
-								<input class="uni-input" type="number" :placeholder="$i18nMsg('formTip-enterQuantity')" @input="saveOilqty" v-model="item.oilqty"/><!-- 中文： 请输入数量 -->
+								<input auto-blur=true class="uni-input" type="number" :placeholder="$i18nMsg('formTip-enterQuantity')" @input="saveOilqty" v-model="item.oilqty"/><!-- 中文： 请输入数量 -->
 							</view>
 						</view>
 						<view class="info-item info-textarea">
 							<text class="label-text">{{$i18nMsg('inspection-executiveDescribed')}}：</text><!--中文： 执行描述-->
-							<textarea class="uni-textarea" type="number" maxlength="50" v-model="item.description" @input="saveDescription"></textarea>
+							<textarea auto-blur=true class="uni-textarea"  type="number" maxlength="50" v-model="item.description" @input="saveDescription"></textarea>
 							<text class="textareaLength">{{ item.description.length }}/50</text>
 						</view>
 						<view class="img-files">

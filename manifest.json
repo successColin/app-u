@@ -2,7 +2,7 @@
     "name" : "APIoT",
     "appid" : "__UNI__0430F30",
     "description" : "",
-    "versionName" : "9.1.5.002",
+    "versionName" : "9.1.5.004",
     "versionCode" : 915000,
     "transformPx" : false,
     "debug" : true,
@@ -36,18 +36,10 @@
                 "permissions" : [
                     "<uses-feature android:name=\"android.hardware.camera\"/>",
                     "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
                     "<uses-permission android:name=\"android.permission.CAMERA\"/>",
                     "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
-                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
-                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
                     "<uses-permission android:name=\"android.permission.NFC\"/>",
-                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
                     "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>",
-                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
                     "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
                     "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>"
                 ]
@@ -68,9 +60,22 @@
             },
             /* ios打包配置 */
             "sdkConfigs" : {
-                "push" : {},
+                "push" : {
+                    "unipush" : {}
+                },
                 "payment" : {},
-                "ad" : {}
+                "ad" : {},
+                "speech" : {
+                    "ifly" : {}
+                },
+                "maps" : {
+                    "amap" : {
+                        "appkey_ios" : "6ec342cf478913ac62de0ff2dffb6413",
+                        "appkey_android" : "b85506dce97fe1d5701b067561a204fb"
+                    }
+                },
+                "oauth" : {},
+                "share" : {}
             },
             "splashscreen" : {
                 "android" : {
@@ -134,7 +139,7 @@
             "disableHostCheck" : true,
             "proxy" : {
                 "/eam" : {
-                    "target" : "http://47.110.224.226/eam/",
+                    "target" : "https://v9.mingcloud.top/eam/",
                     "changeOrigin" : true,
                     "secure" : false,
                     "pathRewrite" : {
@@ -148,14 +153,27 @@
             "base" : "/h5/",
             "mode" : "hash"
         },
-        "domain" : "http://47.111.24.52"
+        "domain" : "http://47.111.24.52",
+        "sdkConfigs" : {
+            "maps" : {
+                "qqmap" : {
+                    "key" : "QTMBZ-4OLW6-2RBSY-M75PM-WORRE-5YB7X"
+                }
+            }
+        }
     },
     "mp-weixin" : {
         "appid" : "wx8e20a435b8d6d058",
         "setting" : {
             "postcss" : true,
-            "minified" : false,
-            "urlCheck" : false
+            "minified" : true,
+            "urlCheck" : false,
+            "es6" : true
+        },
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "获取您的个人及位置信息"
+            }
         }
     }
 }

@@ -141,7 +141,7 @@
 			]),
 			...mapMutations("verificationRule",["CLEAR_RULESTATE","SET_VER_RULES"]),
 			...mapMutations("Toast", ["TOAST_REQUESTURLS"]),
-			...mapMutations("advanceFilter", ["SET_ADVAN_FILTERS"]),
+			...mapMutations("advanceFilter", ["SET_ADVAN_FILTERS","SET_ADV_FORMDATAS"]),
 			deviceScan(list){//设备盘点扫描
 				ELEMENT_SCAN({}, (option)=>{
 					const code = option.scancode,
@@ -433,6 +433,15 @@
 					
 					childConfig.listConfig = listConfig //设置子面板控件的列表参数
 					childConfig.quickQuery = relationChildTabInfo.quickQuery || {} //设置搜索控件参数
+					
+					this.SET_ADVAN_FILTERS({//设置高级筛选控件
+						tabId:childConfig.tabInfo.mobileTabId,
+						params:relationChildTabInfo.elements
+					})
+					this.SET_ADV_FORMDATAS({	//清空高级筛选条件值
+						tabId:childConfig.tabInfo.mobileTabId + '_filter',
+						value:{}
+					})
 					
 					if(childConfig.tabInfo.showType == 9 && this.childProgressListConfig.length == 0){
 						this.childProgressListConfig.push(childConfig)

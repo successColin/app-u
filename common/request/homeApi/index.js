@@ -593,6 +593,7 @@ let Home = {
 							elementId:item.id,
 							dataSource:item.mainTableName,//实体表
 							relationTableName:item.relationTableName,//业务表
+							columnName:item.mainColumnName,//实体表字段
 						}
 						if(feild.elementFormat===2){//级联下拉框
 							cascadeSelects.push(selectParams)

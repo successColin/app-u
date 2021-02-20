@@ -66,8 +66,8 @@
 			:btnTilte="$i18nMsg('basic-cancel')"
 			@elementClick="cancelSelect"></m-button>
 			<picker :disabled="pickerDisabled" @click="handleNotSelect" mode="date" :start="startDate" :end="endDate" class="btn-item" @change="confirmSelect">
-				<m-button 
-				btnClass="redColor" 
+				<m-button class="btn-item" style="width: 100%;"
+				btnClass="mainColor" 
 				:btnTilte="$i18nMsg('basic-confirm')" 
 				></m-button>
 			</picker>
@@ -211,12 +211,21 @@
 			selectAll(e){
 				const data = []
 				if(!!e.detail.value.length){
+					let maxDateAry = [];
 					const selectRouteId = this.routeData.map(function (item) {
+						let maxDate = item.maxPlanStartDate.replace(/-/g, '/');
+						let maxDateTime = new Date(maxDate).getTime();
+						maxDateAry.push(maxDateTime);
 						let obj = item
 						obj.checked = true
 						data.push(obj)
 						return item.mokey
 					})
+					const nowMaxDateTime = maxDateAry.sort((a, b) => b -a)[0];
+					const today = this.$dateFormat.formatDate(false, 'yyyy-MM-dd');
+					const startDay = this.$dateFormat.formatDate(nowMaxDateTime, 'yyyy-MM-dd');
+					const dateTime = today === startDay ? 0 : 86400000;
+					this.startDate = this.$dateFormat.formatDate(nowMaxDateTime + dateTime, 'yyyy-MM-dd');
 					this.routeData = data
 					this.selectRouteId = selectRouteId;
 				}else{

@@ -194,7 +194,7 @@
 						if (res.confirm) {
 							for(let i=0;i<_this.storageKeys.length;i++){
 								let key = _this.storageKeys[i]
-								if(key!='language' && key!='baseUrl' && key!='inTestServer' && key!='formalServer' && key!='outTestServer' && key!='otherTestServer'){
+								if(key!='language' && key!='baseUrl' && key!='inTestServer' && key!='formalServer' && key!='outTestServer' && key!='otherTestServer' && key!='baseUrlIndex'){
 									uni.removeStorageSync(key);
 								}
 							}

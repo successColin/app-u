@@ -100,6 +100,39 @@
 			}
 		}
 	}
+	.mainColor-navyBlue{//navyBlue
+		.item{
+			&.current{
+				&::after{
+					content: "";
+					background:rgba(47, 88, 153,1);
+				}
+				
+			}
+		}
+	}
+	.mainColor-violet{//violet
+		.item{
+			&.current{
+				&::after{
+					content: "";
+					background:rgba(216, 0, 109,1);
+				}
+				
+			}
+		}
+	}
+	.mainColor-orange{//orange
+		.item{
+			&.current{
+				&::after{
+					content: "";
+					background:rgba(248, 156, 51,1);
+				}
+				
+			}
+		}
+	}
 	
 }
 .calendar-page{

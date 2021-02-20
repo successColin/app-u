@@ -15,6 +15,7 @@
 				:placeholder="element.placeholderText"
 				:maxlength='-1'
 				v-model.trim="showContent" 
+				auto-blur=true
 				@input="changeLabelColor"
 				@focus="inputFocus"
 				@blur="inputBlur"

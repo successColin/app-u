@@ -73,7 +73,7 @@
 					"SET_TABS_ELEMENT",//设置面板变量
 					"SET_COM_PAGERELOAD"//记录从工作台点击进入后所以面板，用于判断是否需要重新加载
 				]),
-			...mapMutations("advanceFilter", ["SET_ADVAN_FILTERS"]),
+			...mapMutations("advanceFilter", ["SET_ADVAN_FILTERS","SET_ADV_FORMDATAS"]),
 			...mapMutations("Toast", ["TOAST_REQUESTURLS"]),
 			
 			clickList(params){//点击列表
@@ -164,7 +164,10 @@
 					tabId:mainTabID,
 					params:mobileTabsBYRelation.elements
 				})
-				
+				this.SET_ADV_FORMDATAS({	//清空高级筛选条件值
+					tabId:mainTabID + '_filter',
+					value:{}
+				})
 				this.SET_ALLBTNS({//设置按钮
 					tabId:mainTabID,
 					bottomBtns:mobileTabsBYRelation.btnList.bottomBtn,
